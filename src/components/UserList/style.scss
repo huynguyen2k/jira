@@ -1,0 +1,197 @@
+.user-list-contain {
+	color: #172b4d;
+
+	&__title {
+		margin: 32px 0;
+		font-size: 1.8rem;
+		text-align: center;
+	}
+
+	&__search-box {
+		position: relative;
+		margin-bottom: 16px;
+		margin-left: auto;
+		width: 400px;
+
+		.search-input {
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			padding: 10px;
+			padding-right: 40px;
+
+			&:focus {
+				border-color: dodgerblue;
+				box-shadow: 0 0 0 1px dodgerblue;
+			}
+		}
+
+		.search-icon {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translate(0, -50%);
+
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			color: #555;
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.user-list {
+	margin-bottom: 32px;
+	border-radius: 6px;
+	box-shadow: 0 0 5px 0 #aaa;
+	overflow: hidden;
+
+	&__row {
+		display: flex;
+		align-items: center;
+
+		&:nth-child(odd) {
+			background-color: #eee;
+		}
+
+		&:first-child {
+			color: white;
+			background-color: #333;
+		}
+	}
+
+	&__column {
+		padding: 12px 10px;
+
+		&.header {
+			padding: 16px 10px;
+			font-size: 1.1rem;
+			font-weight: 600;
+		}
+
+		&:nth-child(1) {
+			width: 5%;
+		}
+
+		&:nth-child(2) {
+			width: 15%;
+		}
+
+		&:nth-child(3) {
+			width: 20%;
+		}
+
+		&:nth-child(4) {
+			width: 20%;
+		}
+
+		&:nth-child(4) {
+			width: 20%;
+		}
+
+		&:nth-child(5) {
+			width: 20%;
+		}
+
+		.label {
+			display: inline-block;
+			border-radius: 4px;
+			padding: 8px;
+		}
+
+		.label--success {
+			color: #1e6091;
+			background-color: #76c893;
+		}
+
+		.project-name {
+			color: dodgerblue;
+			text-decoration: none;
+		}
+	}
+
+	.avatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	}
+
+	&__btn {
+		display: inline-block;
+		border: none;
+		border-radius: 4px;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+
+		color: #777;
+		background-color: transparent;
+
+		line-height: 14px;
+		text-align: center;
+
+		cursor: pointer;
+		user-select: none;
+		transition: transform 0.1s ease;
+
+		&--danger {
+			color: white;
+			background-color: rgb(233, 21, 64);
+		}
+
+		&--primary {
+			color: white;
+			background-color: dodgerblue;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		& + & {
+			margin-left: 8px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 32px;
+
+	li {
+		.btn {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			width: 40px;
+			height: 40px;
+			margin-left: 8px;
+			background-color: transparent;
+
+			user-select: none;
+
+			&--active {
+				border-color: #28a745;
+				color: white;
+				background-color: #28a745;
+
+				cursor: default;
+				pointer-events: none;
+			}
+
+			&--disable {
+				pointer-events: none;
+			}
+		}
+	}
+}

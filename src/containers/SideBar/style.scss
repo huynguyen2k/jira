@@ -1,0 +1,85 @@
+.absolute-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.side-bar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 64px;
+	height: 100vh;
+
+	color: #deebff;
+	background-color: #0052cc;
+	overflow: hidden;
+	transition: width 0.1s ease;
+
+	&:hover {
+		width: 200px;
+
+		.side-bar__menu-title {
+			visibility: visible;
+		}
+	}
+
+	&__logo {
+		width: 64px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__logo-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0 auto;
+		width: 48px;
+		height: 48px;
+		color: inherit;
+
+		svg {
+			fill: currentColor;
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	&__menu {
+		&-item {
+			display: flex;
+			align-items: center;
+			width: 200px;
+			padding: 12px 0;
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				background-color: rgba($color: white, $alpha: 0.2);
+			}
+		}
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 64px;
+			fill: currentColor;
+
+			svg {
+				width: 22px;
+			}
+		}
+
+		&-title {
+			visibility: hidden;
+			font-size: 0.9rem;
+			font-weight: 600;
+		}
+	}
+}

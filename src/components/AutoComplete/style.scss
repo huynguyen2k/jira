@@ -1,0 +1,76 @@
+.auto-complete {
+	&__search {
+		display: flex;
+		.search-input {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			padding: 0 8px;
+			flex-grow: 1;
+
+			&:focus {
+				border-color: dodgerblue;
+				box-shadow: 0 0 0 1px dodgerblue;
+			}
+		}
+
+		.add-btn {
+			margin-left: 8px;
+			display: inline-block;
+			border: none;
+			border-radius: 4px;
+			padding: 8px 32px;
+
+			color: white;
+			background-color: #38b000;
+
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				background-color: #349707;
+			}
+
+			svg {
+				width: 24px;
+			}
+		}
+	}
+
+	&__options {
+		margin-top: 8px;
+		border-radius: 6px;
+		background-color: #eee;
+
+		max-height: 200px;
+		overflow: hidden auto;
+
+		transition: height 0.25s ease;
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+	}
+
+	&__option-item {
+		display: flex;
+		align-items: center;
+		padding: 8px 16px;
+
+		cursor: pointer;
+		user-select: none;
+
+		&:hover {
+			background-color: #ddd;
+		}
+
+		.avatar {
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			object-fit: cover;
+		}
+		.name {
+			margin-left: 16px;
+		}
+	}
+}

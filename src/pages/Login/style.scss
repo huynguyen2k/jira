@@ -1,0 +1,37 @@
+.login-page {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__wrap {
+		max-width: 100%;
+	}
+
+	&__left-bg {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 370px;
+		max-width: 100%;
+	}
+
+	&__right-bg {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		width: 370px;
+		max-width: 100%;
+	}
+
+	&__top-logo {
+		width: 240px;
+		max-width: 100%;
+		margin: 0 auto 32px;
+		color: #0065ff;
+		fill: #0052cc;
+	}
+}

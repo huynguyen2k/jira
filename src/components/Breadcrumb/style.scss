@@ -1,0 +1,12 @@
+.breadcrumb {
+	&__title {
+		font-size: 1rem;
+	}
+
+	&__slash {
+		display: inline-block;
+		margin: 0 8px;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}

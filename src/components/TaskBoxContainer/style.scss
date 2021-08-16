@@ -1,0 +1,102 @@
+.task-box-container {
+	margin-top: 24px;
+	margin-left: -8px;
+	margin-right: -8px;
+	display: flex;
+	min-height: 400px;
+
+	&__item {
+		margin: 0 8px;
+		border-radius: 4px;
+		padding: 8px;
+		width: 25%;
+		background-color: #f4f5f7;
+		box-shadow: 0 0 5px 1px #ccc;
+
+		.box-label {
+			margin-bottom: 4px;
+			padding: 8px;
+			font-size: 0.9rem;
+		}
+	}
+}
+
+.task-list {
+	height: 100%;
+
+	&__task-item {
+		margin-bottom: 8px;
+		border-radius: 4px;
+		padding: 12px;
+		background-color: white;
+
+		box-shadow: 0 0 5px 1px #ccc;
+		cursor: pointer;
+		user-select: none;
+
+		&:hover {
+			background-color: #ebecf0;
+		}
+	}
+
+	&__task-title {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	&__task-info {
+		margin-top: 12px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__symbol-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.icon {
+			width: 14px;
+			margin-right: 8px;
+
+			&.priority-4 {
+				color: #66b966;
+			}
+
+			&.priority-3 {
+				color: #008a00;
+			}
+
+			&.priority-2 {
+				color: #f90;
+			}
+
+			&.priority-1 {
+				color: #f06666;
+			}
+		}
+
+		.bookmark {
+			color: #65ba43;
+		}
+
+		.checkbox {
+			color: dodgerblue;
+		}
+	}
+
+	&__member-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		img {
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 24px;
+			height: 24px;
+			object-fit: cover;
+		}
+	}
+}

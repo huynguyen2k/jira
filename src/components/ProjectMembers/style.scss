@@ -1,0 +1,18 @@
+.project-members {
+	display: flex;
+	margin-left: 16px;
+
+	img {
+		margin-left: 4px;
+		border-radius: 50%;
+		width: 32px;
+		height: 32px;
+		object-fit: cover;
+		cursor: pointer;
+		transition: transform 0.15s ease;
+
+		&:hover {
+			transform: translate(0, -6px);
+		}
+	}
+}

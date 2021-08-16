@@ -1,0 +1,55 @@
+.create-project-form {
+	color: #555;
+
+	&__group {
+		margin-bottom: 16px;
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 6px;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	&__input,
+	&__select {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		padding: 10px;
+		width: 100%;
+		background-color: #f4f5f7;
+
+		&:hover {
+			background-color: #ebecf0;
+		}
+
+		&:focus {
+			border-color: dodgerblue;
+			background-color: white;
+			box-shadow: 0 0 0 1px dodgerblue;
+		}
+	}
+
+	&__error-message {
+		margin-top: 6px;
+		color: red;
+	}
+
+	.submit-btn {
+		display: inline-block;
+		border: none;
+		border-radius: 4px;
+		padding: 12px 24px;
+
+		cursor: pointer;
+		user-select: none;
+
+		color: white;
+		background-color: dodgerblue;
+
+		&:hover {
+			opacity: 0.85;
+		}
+	}
+}
